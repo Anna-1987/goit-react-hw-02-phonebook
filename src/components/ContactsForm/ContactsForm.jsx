@@ -7,7 +7,7 @@ export class ContactsForm extends Component {
       number: ''
     }
 
-    hendlChange = event =>{
+    hendleChange = event =>{
         const {name, value} = event.currentTarget;
         this.setState({
             [name]:value,
@@ -37,7 +37,7 @@ export class ContactsForm extends Component {
                name='name'
                value={name}
                className={css.input}
-               onChange={this.hendlChange}
+               onChange={this.hendleChange}
                pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                required
